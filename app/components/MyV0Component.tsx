@@ -1,4 +1,3 @@
-=== component.jsx ===
 
 /**
  * v0 by Vercel.
@@ -227,36 +226,3 @@ function WindIcon(props) {
   )
 }
 
-=== styles.css ===
-
-body {
-  font-family: var(--font-libre_franklin), sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-libre_franklin), sans-serif;
-}
-
-=== layout.jsx ===
-
-// This is the root layout component for your Next.js app.
-// Learn more: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required
-
-import { Libre_Franklin } from 'next/font/google'
-import './styles.css'
-
-const libre_franklin = Libre_Franklin({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-libre_franklin',
-})
-
-export default function Layout({ children }) {
-  return (
-    <html lang="en">
-      <body className={libre_franklin.variable}>
-        {children}
-      </body>
-    </html>
-  )
-}
